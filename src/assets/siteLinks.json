@@ -5,8 +5,28 @@
     "link": "https://blog.wangez.site/"
   },
   {
+    "icon": "Github",
+    "name": "Github",
+    "link": "https://github.com/wangenze267"
+  },
+  {
     "icon": "Book",
     "name": "笔记",
     "link": "https://note.wangez.site/"
+  },
+  {
+    "icon": "Slideshare",
+    "name": "掘金",
+    "link": "https://juejin.cn/user/105972016875911"
+  },
+  {
+    "icon": "Toolbox",
+    "name": "工具",
+    "link": "https://github.com/wangenze267/debugging-tools"
+  },
+  {
+    "icon": "NewspaperRegular",
+    "name": "简历",
+    "link": "https://resume.wangez.site/"
   }
 ]
