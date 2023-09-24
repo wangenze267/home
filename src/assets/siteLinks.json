@@ -15,7 +15,7 @@
     "link": "https://note.wangez.site/"
   },
   {
-    "icon": "Slideshare",
+    "icon": "Fish",
     "name": "掘金",
     "link": "https://juejin.cn/user/105972016875911"
   },
@@ -25,8 +25,13 @@
     "link": "https://github.com/wangenze267/debugging-tools"
   },
   {
-    "icon": "NewspaperRegular",
-    "name": "简历",
-    "link": "https://resume.wangez.site/"
+    "icon": "ChartBarRegular",
+    "name": "监控",
+    "link": "https://uptime.wangez.site/"
+  },
+  {
+    "icon": "Snowman",
+    "name": "fdm-cli",
+    "link": "https://github.com/Freedom-Explorers/fdm-cli"
   }
 ]
