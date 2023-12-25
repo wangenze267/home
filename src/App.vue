@@ -28,7 +28,7 @@
   </Transition>
 </template>
 <script setup>
-import { inject } from 'vue'
+// import { inject } from 'vue'
 import { helloInit, checkDays } from "@/utils/getTime.js";
 import { HamburgerButton, CloseSmall } from "@icon-park/vue-next";
 import { mainStore } from "@/store";
@@ -44,7 +44,7 @@ import cursorInit from "@/utils/cursor.js";
 import config from "@/../package.json";
 
 const store = mainStore();
-const monitor = inject('$monitor')
+// const monitor = inject('$monitor')
 
 // 页面宽度
 const getWidth = () => {
@@ -70,14 +70,6 @@ watch(
     }
   },
 );
-
-monitor.perf.init((d)=> {
-  console.log(d)
-})
-
-monitor.resource.init((d)=> {
-  console.log(d)
-})
 
 onMounted(() => {
   // 自定义鼠标
