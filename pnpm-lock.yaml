@@ -32,6 +32,9 @@ dependencies:
   vue3-aplayer:
     specifier: ^1.7.3
     version: 1.7.3(vue@3.3.4)(webpack@5.88.2)
+  website-monitoring:
+    specifier: ^0.0.2
+    version: 0.0.2
 
 devDependencies:
   '@icon-park/vue-next':
@@ -4529,6 +4532,10 @@ packages:
       - '@swc/core'
       - esbuild
       - uglify-js
+    dev: false
+
+  /website-monitoring@0.0.2:
+    resolution: {integrity: sha512-mpoQxwAe2OdYHNHDFZ/TmIZPR6dgUGICzv8javaTjRfUDhzycGVibF2jK/ZM9X19tKiE9Bxdmt3XAPP1BThTYQ==}
     dev: false
 
   /whatwg-url@7.1.0:

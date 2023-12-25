@@ -90,7 +90,6 @@ const jumpLink = (data) => {
 };
 
 onMounted(() => {
-  console.log(siteLinks);
 });
 </script>
 

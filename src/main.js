@@ -1,4 +1,5 @@
 import { createApp } from "vue";
+import Monitor from 'website-monitoring'
 import "@/style/style.scss";
 import App from "@/App.vue";
 // 引入 pinia
@@ -9,6 +10,8 @@ const app = createApp(App);
 const pinia = createPinia();
 pinia.use(piniaPluginPersistedstate);
 
+
+app.provide('$monitor', Monitor) 
 app.use(pinia);
 app.mount("#app");
 

@@ -28,6 +28,7 @@
   </Transition>
 </template>
 <script setup>
+import { inject } from 'vue'
 import { helloInit, checkDays } from "@/utils/getTime.js";
 import { HamburgerButton, CloseSmall } from "@icon-park/vue-next";
 import { mainStore } from "@/store";
@@ -43,6 +44,7 @@ import cursorInit from "@/utils/cursor.js";
 import config from "@/../package.json";
 
 const store = mainStore();
+const monitor = inject('$monitor')
 
 // 页面宽度
 const getWidth = () => {
@@ -68,6 +70,14 @@ watch(
     }
   },
 );
+
+monitor.perf.init((d)=> {
+  console.log(d)
+})
+
+monitor.resource.init((d)=> {
+  console.log(d)
+})
 
 onMounted(() => {
   // 自定义鼠标
@@ -102,14 +112,32 @@ onMounted(() => {
   const styleTitle1 = "font-size: 20px;font-weight: 600;color: rgb(244,167,89);";
   const styleTitle2 = "font-size:12px;color: rgb(244,167,89);";
   const styleContent = "color: rgb(30,152,255);";
-  const title1 = "無名の主页";
+  const title1 = "Wangezの主页";
   const title2 = `
- _____ __  __  _______     ____     __
-|_   _|  \\/  |/ ____\\ \\   / /\\ \\   / /
-  | | | \\  / | (___  \\ \\_/ /  \\ \\_/ /
-  | | | |\\/| |\\___ \\  \\   /    \\   /
- _| |_| |  | |____) |  | |      | |
-|_____|_|  |_|_____/   |_|      |_|`;
+  WWWWWWWW                           WWWWWWWW                                                                                         
+  W::::::W                           W::::::W                                                                                         
+  W::::::W                           W::::::W                                                                                         
+  W::::::W                           W::::::W                                                                                         
+    W:::::W           WWWWW           W:::::Waaaaaaaaaaaaa  nnnn  nnnnnnnn       ggggggggg   ggggg    eeeeeeeeeeee    zzzzzzzzzzzzzzzzz
+    W:::::W         W:::::W         W:::::W a::::::::::::a n:::nn::::::::nn    g:::::::::ggg::::g  ee::::::::::::ee  z:::::::::::::::z
+      W:::::W       W:::::::W       W:::::W  aaaaaaaaa:::::an::::::::::::::nn  g:::::::::::::::::g e::::::eeeee:::::eez::::::::::::::z 
+      W:::::W     W:::::::::W     W:::::W            a::::ann:::::::::::::::ng::::::ggggg::::::gge::::::e     e:::::ezzzzzzzz::::::z  
+        W:::::W   W:::::W:::::W   W:::::W      aaaaaaa:::::a  n:::::nnnn:::::ng:::::g     g:::::g e:::::::eeeee::::::e      z::::::z   
+        W:::::W W:::::W W:::::W W:::::W     aa::::::::::::a  n::::n    n::::ng:::::g     g:::::g e:::::::::::::::::e      z::::::z    
+          W:::::W:::::W   W:::::W:::::W     a::::aaaa::::::a  n::::n    n::::ng:::::g     g:::::g e::::::eeeeeeeeeee      z::::::z     
+          W:::::::::W     W:::::::::W     a::::a    a:::::a  n::::n    n::::ng::::::g    g:::::g e:::::::e              z::::::z      
+            W:::::::W       W:::::::W      a::::a    a:::::a  n::::n    n::::ng:::::::ggggg:::::g e::::::::e            z::::::zzzzzzzz
+            W:::::W         W:::::W       a:::::aaaa::::::a  n::::n    n::::n g::::::::::::::::g  e::::::::eeeeeeee   z::::::::::::::z
+              W:::W           W:::W         a::::::::::aa:::a n::::n    n::::n  gg::::::::::::::g   ee:::::::::::::e  z:::::::::::::::z
+              WWW             WWW           aaaaaaaaaa  aaaa nnnnnn    nnnnnn    gggggggg::::::g     eeeeeeeeeeeeee  zzzzzzzzzzzzzzzzz
+                                                                                          g:::::g                                      
+                                                                              gggggg      g:::::g                                      
+                                                                              g:::::gg   gg:::::g                                      
+                                                                              g::::::ggg:::::::g                                      
+                                                                                gg:::::::::::::g                                       
+                                                                                  ggg::::::ggg                                         
+                                                                                    gggggg                                            
+  `;
   const content = `\n\n版本: ${config.version}\n主页: ${config.home}\nGithub: ${config.github}`;
   console.info(`%c${title1} %c${title2} %c${content}`, styleTitle1, styleTitle2, styleContent);
 });

@@ -2,7 +2,7 @@
   "name": "home",
   "author": "imsyy",
   "github": "https://github.com/imsyy/home",
-  "home": "https://imsyy.top",
+  "home": "https://wangez.site",
   "private": true,
   "version": "4.1.2",
   "type": "module",
@@ -21,7 +21,8 @@
     "pinia-plugin-persistedstate": "^3.0.0",
     "swiper": "^9.3.2",
     "vue": "^3.3.4",
-    "vue3-aplayer": "^1.7.3"
+    "vue3-aplayer": "^1.7.3",
+    "website-monitoring": "^0.0.2"
   },
   "devDependencies": {
     "@icon-park/vue-next": "^1.4.2",
