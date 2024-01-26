@@ -84,7 +84,6 @@ onMounted(() => {
     });
     return false;
   };
-  console.log(a)
   // 鼠标中键事件
   window.addEventListener("mousedown", (event) => {
     if (event.button == 1) {
