@@ -33,5 +33,10 @@
     "icon": "Snowman",
     "name": "fdm-cli",
     "link": "https://github.com/Freedom-Explorers/fdm-cli"
+  },
+  {
+    "icon": "Prompt",
+    "name": "research-prompts",
+    "link": "https://github.com/Freedom-Explorers/research-prompt"
   }
 ]
